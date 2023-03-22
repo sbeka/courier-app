@@ -1,0 +1,7 @@
+{
+  "name": "courier-client",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

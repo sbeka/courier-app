@@ -1,0 +1,50 @@
+{ 
+    "_id" : ObjectId("5a9fdd7e075bfb0b2bc43050"), 
+    "login" : "sbeka", 
+    "password" : "123", 
+    "lastname" : "Бекжан", 
+    "firstname" : "Сейткали", 
+    "car" : "Lexus GS 300", 
+    "gosnumber" : "847 HND 02", 
+    "balance" : NumberInt(2500)
+}
+{ 
+    "_id" : ObjectId("5aa26fd055c26f05eb240766"), 
+    "login" : "sergali", 
+    "password" : "123", 
+    "lastname" : "Сейтқали", 
+    "firstname" : "Серғали", 
+    "car" : "Mercedes Benz", 
+    "gosnumber" : "342 DFE 05", 
+    "balance" : NumberInt(1000)
+}
+{ 
+    "_id" : ObjectId("5aa2700b55c26f05eb240767"), 
+    "login" : "birzhan", 
+    "password" : "123", 
+    "lastname" : "Сейтқали", 
+    "firstname" : "Біржан", 
+    "car" : "Toyota Windom", 
+    "gosnumber" : "546 FJD 05", 
+    "balance" : NumberInt(500)
+}
+{ 
+    "_id" : ObjectId("5aa2703255c26f05eb240768"), 
+    "login" : "daryn", 
+    "password" : "123", 
+    "lastname" : "Қыдырбеков", 
+    "firstname" : "Дарын", 
+    "car" : "Toyota Carina", 
+    "gosnumber" : "862 JFE 02", 
+    "balance" : NumberInt(1300)
+}
+{ 
+    "_id" : ObjectId("5aa2706055c26f05eb240769"), 
+    "login" : "madina", 
+    "password" : "123", 
+    "lastname" : "Оңалбаева", 
+    "firstname" : "Мадина", 
+    "car" : "Lexus GS 300", 
+    "gosnumber" : "634 UED 02", 
+    "balance" : NumberInt(3200)
+}

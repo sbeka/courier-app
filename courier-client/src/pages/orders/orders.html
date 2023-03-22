@@ -1,0 +1,73 @@
+<ion-header>
+  <ion-toolbar color="custom">
+
+    <ion-title>Менің тапсырыстарым</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="refresh()">
+        <ion-icon name="refresh"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <div padding>
+    <ion-segment [(ngModel)]="status">
+      <ion-segment-button value="Свободен">
+        Ашықтары
+      </ion-segment-button>
+      <ion-segment-button value="Выполняется">
+        Орындалуда
+      </ion-segment-button>
+      <ion-segment-button value="Завершено">
+        Бітті
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+
+  <div [ngSwitch]="status">
+
+    <ion-list *ngSwitchCase="'Свободен'">
+      <button ion-item *ngFor="let order of freeOrders" (click)="showDetail(order)">
+        <ion-avatar item-start>
+          <img src="assets/icon/order.png">
+        </ion-avatar>
+        <h3><span class="point">A</span> {{order.pointa}}</h3>
+        <h3><span class="point">B</span> {{order.pointb}}</h3>
+        <p>Бағасы: {{order.price}} тг</p>
+      </button>
+      <p padding *ngIf="!freeOrders.length">Ақпараттар жоқ!</p>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Выполняется'">
+      <button ion-item *ngFor="let order of inprocessOrders" (click)="showDetail(order)">
+        <ion-avatar item-start>
+          <img src="assets/icon/order.png">
+        </ion-avatar>
+        <h3><span class="point">A</span> {{order.pointa}}</h3>
+        <h3><span class="point">B</span> {{order.pointb}}</h3>
+        <p>Бағасы: {{order.price}} тг</p>
+      </button>
+      <p padding *ngIf="!inprocessOrders.length">Ақпараттар жоқ!</p>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Завершено'">
+      <button ion-item *ngFor="let order of completedOrders" (click)="showDetail(order)">
+        <ion-avatar item-start>
+          <img src="assets/icon/order.png">
+        </ion-avatar>
+        <h3><span class="point">A</span> {{order.pointa}}</h3>
+        <h3><span class="point">B</span> {{order.pointb}}</h3>
+        <p>Бағасы: {{order.price}} тг</p>
+      </button>
+      <p padding *ngIf="!completedOrders.length">Ақпараттар жоқ!</p>
+    </ion-list>
+
+  </div>
+
+</ion-content>

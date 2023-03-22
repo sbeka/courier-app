@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-navbar color="custom">
+    <ion-title>Тапсырысты алдыңыз!</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list>
+        <ion-item>
+            <div><b>A нүктесі:</b></div>
+            <div>{{order.pointa}}</div>
+        </ion-item>
+        <ion-item>
+            <div><b>Б нүктесі:</b></div>
+            <div>{{order.pointb}}</div>
+        </ion-item>
+        <ion-item>
+            <div><b>Бағасы:</b></div>
+            <div item-end>{{order.price}} тг</div>
+        </ion-item>
+        <ion-item>
+            <div><b>Статусы:</b></div>
+            <div item-end>{{order.status}}</div>
+        </ion-item>
+        <ion-item>
+            <div><b>Сипаттамасы:</b></div>
+            <div>{{order.desc}}</div>
+        </ion-item>
+    </ion-list>
+
+  <ng-container *ngIf="markerLat && markerLng">
+    <agm-map [latitude]="lat" [longitude]="lon" [zoom]="16" [mapTypeControl]="true" [fullscreenControl]="true">
+      <agm-marker [latitude]="markerLat" [longitude]="markerLng"></agm-marker>
+    </agm-map>
+    <br>
+  </ng-container>
+
+    <button ion-button block color="secondary" (click)="completedOrder()">Тапсырысты аяқтау</button>
+    <br>
+    <button ion-button block color="danger" (click)="cancelOrder()">Тапсырысты қайтарып беру</button>
+
+  </ion-content>

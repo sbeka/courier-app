@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="custom">
+    <ion-title>Менің профилім</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal" (click)="logout()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="user-photo">
+    <img src="./assets/imgs/user.png" alt="user">
+  </div>
+
+  <table class="table">
+    <tr>
+      <th>Тегі:</th>
+      <td>{{user.lastname}}</td>
+    </tr>
+    <tr>
+      <th>Есімі:</th>
+      <td>{{user.firstname}}</td>
+    </tr>
+    <tr>
+      <th>Email:</th>
+      <td>{{user.email}}</td>
+    </tr>
+    <tr>
+      <th>Компаниясы:</th>
+      <td>{{user.company}}</td>
+    </tr>
+    <tr>
+      <th>Мекен-жайы:</th>
+      <td>{{user.address}}</td>
+    </tr>
+  </table>
+
+</ion-content>

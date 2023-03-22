@@ -1,0 +1,33 @@
+{ 
+    "_id" : ObjectId("5a9fe20441c6e70bdc18d3a4"), 
+    "pointa" : "Шашкина 23, уг. Темирязева", 
+    "pointb" : "Торговый центр Мега на Розабакиева", 
+    "status" : "Свободен", 
+    "clientid" : "5aa276d855c26f05eb24076c", 
+    "driverid" : "", 
+    "desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ", 
+    "price" : NumberInt(3500), 
+    "coor" : "43.20821002648064, 76.86339855194092"
+}
+{ 
+    "_id" : ObjectId("5aa00731ced94a11a1ea6b03"), 
+    "pointa" : "Алматы, Абай даңғылы, 42 үй", 
+    "pointb" : "Талдықорған қаласы, Шевченко көшесі, 546 үй", 
+    "status" : "Свободен", 
+    "clientid" : "5aa276ec55c26f05eb24076d", 
+    "driverid" : "", 
+    "desc" : "Это описание заказа", 
+    "price" : NumberInt(4300), 
+    "coor" : "43.229195113965, 76.849365234375"
+}
+{ 
+    "_id" : ObjectId("5aa2aacfa2f76207b7fd0f18"), 
+    "pointa" : "Алматы, Коктем 3-й микрорайон, 1", 
+    "pointb" : "Алматы, Достык проспект, 52 Достык проспект, 52/2", 
+    "status" : "Свободен", 
+    "clientid" : "5aa276fe55c26f05eb24076e", 
+    "driverid" : "", 
+    "desc" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.", 
+    "price" : NumberInt(3000), 
+    "coor" : "43.24473380893663, 76.9577693939209"
+}

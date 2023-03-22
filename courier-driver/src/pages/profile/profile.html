@@ -1,0 +1,41 @@
+<ion-header>
+
+  <ion-navbar color="custom">
+    <ion-title>Менің профилім</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <div class="icon-img">
+    <img src="{{user.avatar}}" alt="">
+  </div>
+
+  <ion-list>
+    <ion-item>
+      <div>Тегі:</div>
+      <div item-end>{{user.firstname}}</div>
+    </ion-item>
+    <ion-item>
+      <div>Есімі:</div>
+      <div item-end>{{user.lastname}}</div>
+    </ion-item>
+    <ion-item>
+      <div>ИИН:</div>
+      <div item-end>{{user.iin}}</div>
+    </ion-item>
+    <ion-item>
+      <div>Көлігі:</div>
+      <div item-end>{{user.car}}</div>
+    </ion-item>
+    <ion-item>
+      <div>Гос. номер:</div>
+      <div item-end>{{user.gosnumber}}</div>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button block color="custom" (click)="logout()">Шығу</button>
+
+</ion-content>

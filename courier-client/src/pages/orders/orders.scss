@@ -1,0 +1,16 @@
+page-orders {
+    .point {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #F334B2;
+        color: white;
+        display: inline-block;
+        text-align: center;
+    }
+
+    ion-avatar img {
+        width: 55px!important;
+        height: 55px!important;
+    }
+}

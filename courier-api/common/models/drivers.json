@@ -1,0 +1,41 @@
+{
+  "name": "drivers",
+  "plural": "drivers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "login": {
+      "type": "string",
+      "required": true
+    },
+    "password": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "car": {
+      "type": "string"
+    },
+    "gosnumber": {
+      "type": "string"
+    },
+    "balance": {
+      "type": "number"
+    },
+    "coor": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,54 @@
+<ion-header>
+
+  <ion-navbar color="custom">
+    <ion-title>Тіркелу</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-input type="text" name="login" [(ngModel)]="user.login" placeholder="Логин" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" name="password" [(ngModel)]="user.password" placeholder="Пароль"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" name="password2" [(ngModel)]="password2" placeholder="Пароль-ді қайталаңыз"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" name="lastname" [(ngModel)]="user.lastname" placeholder="Тегіңіз"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" name="firstname" [(ngModel)]="user.firstname" placeholder="Есіміңіз"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" name="phone" [(ngModel)]="user.phone" placeholder="Телефоныңыз"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" name="email" [(ngModel)]="user.email" placeholder="Email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" name="company" [(ngModel)]="user.company" placeholder="Компания"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="text" name="address" [(ngModel)]="user.address" placeholder="Мекен-жайыңыз"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <button ion-button block color="custom" (click)="reg()">Тіркелу</button>
+
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar color="custom">
+    <ion-title>Жаңа тапсырыстар</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <div>{{orderProvider.error.message}}</div>
+
+  <ion-list>
+    <button ion-item *ngFor="let order of orders" (click)="showDetail(order)">
+      <ion-avatar item-start>
+        <img src="./assets/imgs/new-item.webp">
+      </ion-avatar>
+      <h3><span class="point">A</span> {{order.pointa}}</h3>
+      <h3><span class="point">Б</span> {{order.pointb}}</h3>
+      <p>Бағасы: {{order.price}} тг | {{order.time | date:'d MMM HH:mm'}}</p>
+    </button>
+  </ion-list>
+
+  <p class="alert" *ngIf="!orders.length">Тапсырыстар жоқ!</p>
+</ion-content>

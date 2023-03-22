@@ -1,0 +1,45 @@
+<ion-header>
+
+  <ion-navbar color="custom">
+    <ion-title>Тапсырыс қосу</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>А нүктесі</ion-label>
+      <ion-input type="text" name="pointa" [(ngModel)]="order.pointa"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Б нүктесі</ion-label>
+      <ion-input type="text" name="pointb" [(ngModel)]="order.pointb"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Бағасы</ion-label>
+      <ion-input type="number" name="price" [(ngModel)]="order.price"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Сипаттамасы</ion-label>
+      <ion-input type="text" name="desc" [(ngModel)]="order.desc"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-item>
+    <ion-label>Б нүктесін картадан көрсетіңіз (жүргізуші көру үшін)</ion-label>
+  </ion-item>
+  <agm-map [latitude]="lat" [longitude]="lon" [zoom]="12" (mapClick)="placeMarker($event)" [mapTypeControl]="true" [fullscreenControl]="true">
+    <agm-marker *ngIf="marker" [latitude]="markerLat" [longitude]="markerLng"></agm-marker>
+  </agm-map>
+
+  <button ion-button block color="custom" (click)="addOrder()">Тапсырысты қосу</button>
+
+</ion-content>

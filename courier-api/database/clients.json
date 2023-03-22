@@ -1,0 +1,48 @@
+{ 
+    "_id" : ObjectId("5aa15d04dacd8b035622f824"), 
+    "login" : "nurzhan", 
+    "password" : "123", 
+    "firstname" : "Нуржанов", 
+    "lastname" : "Нуржан", 
+    "balance" : NumberInt(200)
+}
+{ 
+    "_id" : ObjectId("5aa276c355c26f05eb24076b"), 
+    "login" : "sabit", 
+    "password" : "123", 
+    "firstname" : "Сәбит", 
+    "lastname" : "Сәбитов", 
+    "balance" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5aa276d855c26f05eb24076c"), 
+    "login" : "arman", 
+    "password" : "123", 
+    "firstname" : "Арман", 
+    "lastname" : "Арманов", 
+    "balance" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5aa276ec55c26f05eb24076d"), 
+    "login" : "kanat", 
+    "password" : "123", 
+    "firstname" : "Қанат", 
+    "lastname" : "Қанатов", 
+    "balance" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5aa276fe55c26f05eb24076e"), 
+    "login" : "asem", 
+    "password" : "123", 
+    "firstname" : "Әсем", 
+    "lastname" : "Ахметжанова", 
+    "balance" : NumberInt(0)
+}
+{ 
+    "_id" : ObjectId("5aa2771f55c26f05eb24076f"), 
+    "login" : "fariza", 
+    "password" : "123", 
+    "firstname" : "Фариза", 
+    "lastname" : "Есемесова", 
+    "balance" : NumberInt(1000)
+}
